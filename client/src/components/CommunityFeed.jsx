@@ -6,7 +6,7 @@ const posts = [
         id: 1,
         image: "/science.png",
         handle: "@sarah_wellness",
-        caption: "Week 4 on the protocol and the energy shift is undeniable. 🌱 #wellnutrition"
+        caption: "Week 4 on the protocol and the energy shift is undeniable. 🌱 #uswellnesscenter"
     },
     {
         id: 2,
