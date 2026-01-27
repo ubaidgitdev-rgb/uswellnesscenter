@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const testimonials = [
     {
-        content: "WellNutrition has completely transformed how I view food. The meal plans are delicious and easy to follow.",
+        content: "USWellnessCenter has completely transformed how I view food. The meal plans are delicious and easy to follow.",
         author: "Sarah J.",
         role: "Yoga Instructor",
         image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"

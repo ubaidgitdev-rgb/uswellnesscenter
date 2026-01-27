@@ -46,7 +46,7 @@ const CoachesAndBenefits = () => {
                             Clinical <br /><span className="italic text-forest-600">Precision.</span>
                         </motion.h2>
                         <p className="text-xl text-forest-800 font-light leading-relaxed mb-16 max-w-xl">
-                            WellNutrition isn't a generic app. It's a clinical protocol developed by world-class clinicians who understand that valid health advice requires biological context.
+                            USWellnessCenter isn't a generic app. It's a clinical protocol developed by world-class clinicians who understand that valid health advice requires biological context.
                         </p>
 
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-12">

@@ -39,7 +39,7 @@ const About = () => {
                         <h2 className="text-4xl font-serif font-bold text-forest-900 mb-6">Founded on Science,<br />Driven by Result.</h2>
                         <div className="space-y-6 text-forest-700 leading-relaxed mb-12">
                             <p>
-                                WellNutrition started with a simple question: Why is nutrition so confusing? We stripped away the fads to focus on metabolic flexibility and gut health.
+                                USWellnessCenter started with a simple question: Why is nutrition so confusing? We stripped away the fads to focus on metabolic flexibility and gut health.
                             </p>
                             <p>
                                 Our approach combines clinical data with holistic wisdom. We don't just count calories; we count chemicals, hormones, and happiness.
