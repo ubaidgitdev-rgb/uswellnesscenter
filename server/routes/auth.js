@@ -81,17 +81,23 @@ router.post(
         const { email, password } = req.body;
 
         try {
+            console.log('Login attempt for email:', email);
             let user = await User.findOne({ email });
 
             if (!user) {
+                console.log('User not found in database');
                 return res.status(400).json({ errors: [{ msg: 'Invalid Credentials' }] });
             }
 
+            console.log('User found, checking password...');
             const isMatch = await user.matchPassword(password);
 
             if (!isMatch) {
+                console.log('Password mismatch');
                 return res.status(400).json({ errors: [{ msg: 'Invalid Credentials' }] });
             }
+
+            console.log('Login successful, signing token...');
 
             const payload = {
                 user: {
