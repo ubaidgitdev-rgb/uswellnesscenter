@@ -9,14 +9,14 @@ const createAdmin = async () => {
         await mongoose.connect(process.env.MONGODB_URI);
         console.log('MongoDB Connected');
 
-        const adminEmail = 'admin@wellnutrition.com';
+        const adminEmail = 'admin@uswellnesscenter.com';
 
         // Delete existing to ensure fresh hash if needed
         await User.findOneAndDelete({ email: adminEmail });
         console.log('Old admin user removed (if existed)');
 
         const admin = new User({
-            name: 'System Administrator',
+            name: 'USWellnessCenter Admin',
             email: adminEmail,
             password: 'admin123456',
             role: 'admin'
