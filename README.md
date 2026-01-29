@@ -1,4 +1,5 @@
-# Wellness Coach - Premium Wellness & Nutrition Center Platform
+# Wellness Coach - Premium Wellness & Nutrition Center Platform (SYNCED AT 2026-01-29)
+<!-- FORCE UPDATE CHECK -->
 
 Wellness Coach is a state-of-the-art, high-performance web application designed for modern nutritionists, wellness centers, and health coaches. Built with a focus on aesthetics, user experience, and robust functionality, this platform provides everything a wellness business needs to thrive online.
 
