@@ -1,4 +1,5 @@
 {
+    "//": "Deployment configuration updated",
     "rewrites": [
         {
             "source": "/(.*)",
