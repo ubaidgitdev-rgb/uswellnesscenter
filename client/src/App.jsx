@@ -12,6 +12,7 @@ import Services from './pages/Services'
 import Contact from './pages/Contact'
 import AdminDashboard from './pages/AdminDashboard'
 import { AuthProvider } from './context/AuthContext'
+import NotFound from './pages/NotFound'
 import Layout from './components/Layout'
 import Preloader from './components/Preloader'
 
@@ -46,6 +47,7 @@ function App() {
                 <Route path="/admin" element={<AdminDashboard />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/register" element={<Register />} />
+                <Route path="*" element={<NotFound />} />
               </Routes>
             </motion.div>
           )}

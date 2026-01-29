@@ -67,10 +67,10 @@ wellnutrition/
     npm run dev
     ```
 
-## 👤 Developer
+## 👥 Development Team
 
-**Ubaidullah**
-*Professional Full-Stack Developer*
+**USWellness Tech Team**
+*Professional Full-Stack Clinical Solutions*
 
 Dedicated to creating high-converting, beautiful digital products for the wellness industry.
 

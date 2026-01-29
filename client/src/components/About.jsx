@@ -5,9 +5,9 @@ const About = () => {
     return (
         <div className="bg-cream-50">
             {/* About Hero */}
-            <div className="bg-forest-900 py-24 lg:py-32 relative overflow-hidden">
+            <div className="bg-forest-500 py-24 lg:py-32 relative overflow-hidden shadow-xl">
                 {/* Abstract Shapes/Background */}
-                <div className="absolute top-0 right-0 w-1/2 h-full bg-forest-800 rounded-l-full opacity-20 transform translate-x-1/3"></div>
+                <div className="absolute top-0 right-0 w-1/2 h-full bg-white/10 rounded-l-full transform translate-x-1/3 blur-3xl"></div>
 
                 <div className="container-fluid relative z-10">
                     <motion.div
@@ -15,11 +15,11 @@ const About = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         className="max-w-3xl"
                     >
-                        <span className="text-gold-500 font-bold uppercase tracking-widest text-sm mb-4 block">Our Philosophy</span>
-                        <h1 className="text-5xl md:text-7xl font-serif text-cream-50 mb-8 leading-tight">
-                            Redefining <span className="italic text-sage-300">Nourishment</span>
+                        <span className="text-white font-black uppercase tracking-[0.4em] text-[10px] mb-6 block opacity-80">Our Philosophy</span>
+                        <h1 className="text-5xl md:text-7xl font-serif text-white mb-8 leading-tight">
+                            Redefining <span className="italic text-forest-50">Nourishment</span>
                         </h1>
-                        <p className="text-xl text-forest-200 font-light leading-relaxed">
+                        <p className="text-xl text-forest-50 font-light leading-relaxed">
                             We believe that true health isn't about restriction. It's about abundance, bio-individuality, and understanding the profound language of your own body.
                         </p>
                     </motion.div>

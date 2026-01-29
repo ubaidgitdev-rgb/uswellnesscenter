@@ -64,7 +64,7 @@ const Navbar = () => {
                 {/* Logo */}
                 <div className="flex-shrink-0 z-50">
                     <Link to="/" className={logoClasses}>
-                        USWellnessCenter<span className="text-gold-500">.</span>
+                        USWellnessCenter<span className="text-forest-400">.</span>
                     </Link>
                 </div>
 
@@ -89,7 +89,7 @@ const Navbar = () => {
                     ))}
                     {user && user.role === 'admin' && (
                         <Link to="/admin" className={linkClasses('/admin')}>
-                            <span className="text-gold-500 font-black tracking-widest text-[10px] uppercase border border-gold-500/30 px-3 py-1 rounded-full hover:bg-gold-500 hover:text-forest-950 transition-all">
+                            <span className="text-forest-500 font-black tracking-widest text-[10px] uppercase border border-forest-500/30 px-3 py-1 rounded-full hover:bg-forest-500 hover:text-white transition-all">
                                 Admin panel
                             </span>
                         </Link>
@@ -195,7 +195,7 @@ const Navbar = () => {
                                     <Link
                                         to="/admin"
                                         onClick={() => setIsOpen(false)}
-                                        className="text-2xl font-black uppercase tracking-widest text-gold-600 border-2 border-gold-600/30 px-10 py-4 rounded-full"
+                                        className="text-2xl font-black uppercase tracking-widest text-forest-500 border-2 border-forest-500/30 px-10 py-4 rounded-full"
                                     >
                                         Admin Panel
                                     </Link>

@@ -44,7 +44,7 @@ const Hero = () => {
     }, []);
 
     return (
-        <section className="relative h-[80vh] min-h-[600px] w-full overflow-hidden bg-forest-950">
+        <section className="relative h-[65vh] min-h-[500px] w-full overflow-hidden bg-forest-900">
             {/* Background Slides with subtle parallax */}
             <AnimatePresence mode="wait">
                 <motion.div
@@ -59,9 +59,9 @@ const Hero = () => {
                         className="absolute inset-0 bg-cover bg-center"
                         style={{ backgroundImage: `url(${slides[current].image})` }}
                     />
-                    {/* Deep Premium Overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-forest-950 via-forest-950/40 to-forest-900/20" />
-                    <div className="absolute inset-0 bg-gradient-to-r from-forest-950/80 via-transparent to-transparent" />
+                    {/* Vibrant Green Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-forest-900 via-forest-900/40 to-forest-800/20" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-forest-900/90 via-forest-800/20 to-transparent" />
                 </motion.div>
             </AnimatePresence>
 
@@ -109,8 +109,8 @@ const Hero = () => {
                                 }}
                                 className="flex items-center gap-4 mb-6"
                             >
-                                <div className="h-px w-10 bg-gold-500" />
-                                <span className="text-gold-500 font-bold tracking-[0.3em] uppercase text-xs">
+                                <div className="h-px w-10 bg-forest-400" />
+                                <span className="text-forest-400 font-bold tracking-[0.3em] uppercase text-xs text-shadow-sm">
                                     Premium Wellness Since 2024
                                 </span>
                             </motion.div>
@@ -120,7 +120,7 @@ const Hero = () => {
                                     hidden: { y: 30, opacity: 0 },
                                     visible: { y: 0, opacity: 1 }
                                 }}
-                                className="text-5xl md:text-7xl lg:text-8xl font-serif text-cream-50 leading-[0.9] mb-6 tracking-tighter"
+                                className="text-4xl md:text-5xl lg:text-6xl font-serif text-cream-50 leading-tight mb-4 tracking-tight"
                             >
                                 {slides[current].title.split(' ').map((word, i) => (
                                     <span key={i} className="inline-block mr-[0.2em]">{word}</span>
@@ -132,7 +132,7 @@ const Hero = () => {
                                     hidden: { y: 20, opacity: 0 },
                                     visible: { y: 0, opacity: 0.9 }
                                 }}
-                                className="text-lg md:text-xl text-cream-100 font-light max-w-2xl mb-10 leading-relaxed"
+                                className="text-base md:text-lg text-cream-100 font-light max-w-xl mb-8 leading-relaxed"
                             >
                                 {slides[current].subtitle}
                             </motion.p>
@@ -174,7 +174,7 @@ const Hero = () => {
                         <span className={`mr-4 text-[10px] font-bold transition-all duration-300 ${current === i ? 'opacity-100 text-gold-500 translate-x-0' : 'opacity-0 translate-x-4 text-white'}`}>
                             0{i + 1}
                         </span>
-                        <div className={`h-12 w-[2px] transition-all duration-500 ${current === i ? 'bg-gold-500 h-16' : 'bg-white/20'}`} />
+                        <div className={`h-12 w-[3px] transition-all duration-500 rounded-full ${current === i ? 'bg-forest-400 h-20 shadow-[0_0_15px_rgba(74,222,128,0.5)]' : 'bg-white/20'}`} />
                     </button>
                 ))}
             </div>
@@ -189,9 +189,9 @@ const Hero = () => {
                 <div className="w-12 h-px bg-white/20" />
                 <span className="text-[10px] font-bold uppercase tracking-[0.3em]">Explore</span>
                 <motion.div
-                    animate={{ y: [0, 10, 0] }}
+                    animate={{ scale: [1, 1.5, 1], opacity: [0.5, 1, 0.5] }}
                     transition={{ repeat: Infinity, duration: 2 }}
-                    className="w-1.5 h-1.5 rounded-full bg-gold-500"
+                    className="w-2 h-2 rounded-full bg-forest-400 shadow-[0_0_10px_rgba(74,222,128,0.8)]"
                 />
             </motion.div>
         </section>

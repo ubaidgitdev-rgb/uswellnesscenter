@@ -42,13 +42,13 @@ const goals = [
 
 const HealthGoals = () => {
     return (
-        <section className="py-32 bg-cream-50 overflow-hidden">
+        <section className="py-12 bg-cream-50 overflow-hidden relative">
             <div className="container-fluid">
-                <div className="text-center mb-24">
+                <div className="text-center mb-10">
                     <motion.span
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
-                        className="text-gold-600 font-bold uppercase tracking-[0.4em] text-[10px] block mb-4"
+                        className="text-forest-500 font-bold uppercase tracking-[0.4em] text-[8px] block mb-2"
                     >
                         Targeted Wellness
                     </motion.span>
@@ -57,48 +57,52 @@ const HealthGoals = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
-                        className="text-5xl md:text-7xl font-serif text-forest-950 mb-8 tracking-tighter"
+                        className="text-3xl md:text-5xl font-serif text-forest-950 mb-4 tracking-tight"
                     >
-                        Achieve Your <span className="italic text-forest-600">Peak Vitality</span>
+                        Achieve Your <span className="italic text-forest-500">Peak Vitality</span>
                     </motion.h2>
                     <motion.div
                         initial={{ width: 0 }}
-                        whileInView={{ width: 80 }}
-                        className="h-1 bg-gold-500 mx-auto"
+                        whileInView={{ width: 40 }}
+                        className="h-1 bg-forest-400 mx-auto rounded-full"
                     />
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
                     {goals.map((goal, index) => (
                         <motion.div
                             key={goal.id}
-                            initial={{ opacity: 0, y: 30 }}
+                            initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            transition={{ duration: 0.6, delay: index * 0.1 }}
-                            whileHover={{ y: -15 }}
-                            className="group glass p-10 rounded-[30px] border-white/40 hover:border-gold-500/20 transition-all duration-500"
+                            transition={{ duration: 0.5, delay: index * 0.05 }}
+                            whileHover={{ y: -5 }}
+                            className="group relative bg-white border border-forest-100/50 p-6 rounded-[1.5rem] hover:shadow-lg transition-all duration-500 overflow-hidden"
                         >
-                            <div className="w-20 h-20 rounded-2xl bg-sage-50 flex items-center justify-center text-4xl mb-8 group-hover:scale-110 group-hover:bg-forest-950 group-hover:rotate-6 transition-all duration-500 shadow-sm group-hover:shadow-xl">
-                                {goal.icon}
-                            </div>
-                            <h3 className="text-3xl font-serif font-bold text-forest-950 mb-4 group-hover:text-forest-700 transition-colors">
-                                {goal.title}
-                            </h3>
-                            <p className="text-forest-700/80 leading-relaxed font-light text-lg mb-8">
-                                {goal.description}
-                            </p>
-                            <div className="pt-6 border-t border-forest-100 flex justify-between items-center group-hover:border-gold-500/20 transition-colors">
-                                <span className="text-xs font-black uppercase tracking-[0.2em] text-forest-950">
-                                    Explore Protocol
-                                </span>
-                                <motion.span
-                                    animate={{ x: [0, 5, 0] }}
-                                    transition={{ repeat: Infinity, duration: 2 }}
-                                    className="text-gold-600 font-black"
-                                >
-                                    →
-                                </motion.span>
+                            <div className="absolute top-0 right-0 w-16 h-16 bg-forest-50 rounded-bl-[2rem] -z-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+                            <div className="relative z-10">
+                                <div className="w-10 h-10 rounded-xl bg-forest-50 flex items-center justify-center text-xl mb-4 group-hover:scale-110 group-hover:bg-forest-500 group-hover:text-white transition-all duration-500 shadow-sm">
+                                    {goal.icon}
+                                </div>
+                                <h3 className="text-lg font-serif font-bold text-forest-950 mb-2 group-hover:text-forest-600 transition-colors">
+                                    {goal.title}
+                                </h3>
+                                <p className="text-forest-700/70 leading-relaxed font-light text-[13px] mb-4">
+                                    {goal.description}
+                                </p>
+                                <div className="pt-3 border-t border-forest-50 flex justify-between items-center group-hover:border-forest-100 transition-colors">
+                                    <span className="text-[8px] font-black uppercase tracking-[0.2em] text-forest-400 group-hover:text-forest-600 transition-colors">
+                                        View Protocol
+                                    </span>
+                                    <motion.span
+                                        animate={{ x: [0, 3, 0] }}
+                                        transition={{ repeat: Infinity, duration: 2 }}
+                                        className="text-forest-500 font-black text-xs"
+                                    >
+                                        →
+                                    </motion.span>
+                                </div>
                             </div>
                         </motion.div>
                     ))}

@@ -38,7 +38,7 @@ const Home = () => {
                         <span className="font-serif italic font-medium">Welcome back, {user?.name}</span>
                         <motion.span
                             whileHover={{ scale: 1.05, x: 5 }}
-                            className="text-gold-500 font-bold uppercase tracking-widest text-xs cursor-pointer hover:text-white transition-colors"
+                            className="text-forest-400 font-bold uppercase tracking-widest text-xs cursor-pointer hover:text-white transition-colors"
                         >
                             Go to Dashboard →
                         </motion.span>

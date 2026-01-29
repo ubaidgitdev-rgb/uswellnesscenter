@@ -120,7 +120,7 @@ const Contact = () => {
                                         onChange={onChange}
                                         required
                                         className="w-full bg-forest-50 border-none rounded-xl py-4 px-6 focus:ring-2 focus:ring-forest-500 transition-all outline-none"
-                                        placeholder="Ubaidullah"
+                                        placeholder="Full Name"
                                     />
                                 </div>
                                 <div className="space-y-2">

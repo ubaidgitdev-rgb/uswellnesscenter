@@ -18,7 +18,7 @@ const About = () => {
                             We don't just change diets, we <span className="text-forest-500 italic">transform lives.</span>
                         </h1>
                         <p className="text-xl text-forest-700 font-light leading-relaxed mb-8">
-                            Founded by <strong>Ubaidullah</strong>, Wellness Coach is a premier nutrition and health center dedicated to holistic well-being. We combine traditional wisdom with modern nutritional science to help you achieve your peak physical and mental potential.
+                            Founded by <strong>Our Board of Clinicians</strong>, Wellness Coach is a premier nutrition and health center dedicated to holistic well-being. We combine traditional wisdom with modern nutritional science to help you achieve your peak physical and mental potential.
                         </p>
                         <div className="grid grid-cols-2 gap-8">
                             <div>
@@ -47,19 +47,19 @@ const About = () => {
                         </div>
                         <div className="absolute -bottom-10 -left-10 bg-white p-8 rounded-3xl shadow-premium border border-forest-100 max-w-xs hidden md:block">
                             <p className="text-forest-900 italic font-medium mb-4">"Our mission is to make healthy ageing a reality for everyone."</p>
-                            <span className="text-forest-500 font-bold text-xs uppercase">— Ubaidullah</span>
+                            <span className="text-forest-500 font-bold text-xs uppercase">— Our Clinical Panel</span>
                         </div>
                     </motion.div>
                 </div>
             </section>
 
             {/* Values Section */}
-            <section className="py-24 bg-forest-900 text-cream-50 overflow-hidden relative">
-                <div className="absolute top-0 right-0 w-1/2 h-full bg-forest-800 skew-x-12 translate-x-32 z-0 opacity-20" />
+            <section className="py-24 bg-forest-500 text-white overflow-hidden relative">
+                <div className="absolute top-0 right-0 w-1/2 h-full bg-white/5 skew-x-12 translate-x-32 z-0" />
                 <div className="container-fluid relative z-10">
                     <div className="max-w-3xl mb-20 text-center mx-auto">
-                        <h2 className="text-4xl md:text-5xl font-serif mb-6">Our Core Philsophy</h2>
-                        <p className="text-forest-200 text-lg font-light">
+                        <h2 className="text-4xl md:text-5xl font-serif mb-6 drop-shadow-sm">Our Core Philosophy</h2>
+                        <p className="text-forest-50 text-xl font-light">
                             We believe in the intersection of Health and Wealth. A healthy body is the greatest asset you can ever own.
                         </p>
                     </div>
@@ -71,7 +71,7 @@ const About = () => {
                             },
                             {
                                 title: "Nutritional Integrity",
-                                desc: "Focusing on whole foods and high-quality supplements that actual work."
+                                desc: "Focusing on whole foods and high-quality supplements that actually work."
                             },
                             {
                                 title: "Sustainable Growth",
@@ -84,10 +84,10 @@ const About = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: i * 0.2 }}
-                                className="p-8 border border-white/10 rounded-3xl backdrop-blur-sm"
+                                className="p-8 border border-white/20 rounded-[2rem] bg-white/10 backdrop-blur-md hover-lift transition-all"
                             >
-                                <h3 className="text-2xl font-serif mb-4 text-gold-500">{value.title}</h3>
-                                <p className="text-forest-200 text-sm leading-relaxed">{value.desc}</p>
+                                <h3 className="text-2xl font-serif mb-4 text-white font-bold">{value.title}</h3>
+                                <p className="text-forest-50 text-sm leading-relaxed font-light">{value.desc}</p>
                             </motion.div>
                         ))}
                     </div>
